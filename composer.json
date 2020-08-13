@@ -1,0 +1,22 @@
+{
+    "name": "feraiur/recommender_system_php",
+    "description": "Collaborative Recommender Filtering and Apriori Rules Associations for PHP language",
+    "version": "1.0.0",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fernando Sanchez",
+            "email": "feraiur@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "feraiur\\recommender_system_php\\": "src/"
+        }
+    }
+}
