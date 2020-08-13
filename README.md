@@ -6,16 +6,14 @@ Recommender for PHP is a library that allows to create recommendations based on:
 
 ## How To
 Include the library using composer and then use the example below:
-`
+```
 include __DIR__.'/vendor/autoload.php';
 
 use feraiur\recommender_system_php\Predictor;
 use feraiur\recommender_system_php\AssociationRules;
 
 
-/*
- *    Example using the recommender library
- */
+// Collaborative Filering
 
 $predictor = new Predictor();
 $dataseRatings = [
@@ -44,7 +42,7 @@ echo("<p>Some recommendations for users about items.</p>");
 var_dump($recommendations);
 
 
-echo("<br><hr><br>");
+// Association Rules
 
 $associationRules = new AssociationRules(20, 50);
 $datasetTransactions = [
@@ -75,7 +73,7 @@ try {
 echo("<h3>Associations Rules:</h3>");
 echo("<p>Ex: People who has item {A} has item {B} too.</p>");
 var_dump($confidenceRules);
-`
+```
 
 
 # Datasets format
